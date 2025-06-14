@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Greeting
 on: push
 jobs:
@@ -6,3 +7,13 @@ jobs:
         steps:
             -  name: "Greet user"
                run: echo "Hello World!"
+=======
+name: Greeting
+on: push
+jobs:
+    greet:
+        runs-on: ubuntu-latest
+        steps:
+            -  name: "Greet user"
+               run: echo "Hello World!"
+>>>>>>> f43931415af7007f8945101849fc90b0a127da9d
