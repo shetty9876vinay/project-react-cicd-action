@@ -28,7 +28,7 @@ jobs:
          -  name: Build Project
             run: npm run build
          -  name: Upload dist Artifact
-            uses: action/upload-artifact@v4
+            uses: actions/upload-artifact@v4
             with:
                 name: dist-files
                 path: dist
@@ -45,7 +45,7 @@ jobs:
         #     run: npm run build
          
          -  name: Download dist Artifact
-            uses: action/download-artifact@v4
+            uses: actions/download-artifact@v4
             with:
                 name: dist-files
                 path: dist
